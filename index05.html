@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SECCIONES</title>
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            background-color: #e30303;
+            height: 100px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .body {
+            background-color: #4287f5;
+            min-height: calc(100vh - 200px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .scroll {
+            background-color: #0fb812;
+            min-height: calc(100vh - 200px); 
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-y: auto;
+        }
+
+        .footer {
+            background-color: #888;
+            height: 100px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .box-one {
+            background-color: #e30303;
+        }
+
+        .box-two {
+            background-color: #4287f5;
+        }
+
+        .box-three {
+            background-color: #0fb812;
+        }
+
+        .box-four {
+            background-color: #888;
+        }
+
+        .box:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="box box-one"></div>
+    </div>
+    <div class="body">
+        <div class=" box-two"></div>
+    </div>
+    <div class="scroll">
+        <div class=" box-three"></div>
+    </div>
+    <div class="footer">
+        <div class="box-four"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMACIONES</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            max-width: 100%;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #e30303;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            flex-shrink: 0;
+        }
+
+        .box-one:hover {
+            transform: scale(1.2);
+        }
+
+        .box-two {
+            background-color: blue;
+        }
+
+        .box-two:hover {
+            transform: translateX(20px);
+        }
+
+        .box-three {
+            background-color: #0fb812;
+        }
+
+        .box-three:hover {
+            background-color: #ffeb3b;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box box-one"></div>
+        <div class="box box-two"></div>
+        <div class="box box-three"></div>
+    </div>
+</body>
+
+</html>
